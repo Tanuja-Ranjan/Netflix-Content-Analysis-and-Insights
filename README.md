@@ -118,7 +118,7 @@ This project helped in gaining practical experience with:
 
 ## 📌 Future Improvements
 
-- Interactive dashboard using Plotly or Power BI
+- Interactive dashboard using Power BI
 - Movie recommendation system
 - Sentiment analysis using movie overviews
 - Predictive analysis using Machine Learning
