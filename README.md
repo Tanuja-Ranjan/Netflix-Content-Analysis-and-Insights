@@ -1,97 +1,131 @@
-# 🎬 Netflix Content Analytics: Trends and Insights
+# 🎬 Netflix Movies Exploratory Data Analysis (EDA) using Python
 
 ## 📌 Project Overview
-This project performs exploratory data analysis (EDA) on Netflix movies and TV shows dataset to uncover trends in content distribution, genres, release patterns, and audience preferences. The goal is to derive meaningful insights that can support content strategy and decision-making.
+
+This project performs **Exploratory Data Analysis (EDA)** on a Netflix Movies dataset using Python. The objective is to clean, preprocess, analyze, and visualize movie data to uncover meaningful trends related to genres, ratings, popularity, and release years.
+
+The project demonstrates the complete data analysis workflow, including data cleaning, feature engineering, statistical analysis, and visualization.
 
 ---
 
-## 🎯 Problem Statement
-With the rapid growth of streaming platforms, it is important to understand:
-- What type of content is most popular  
-- Which genres dominate the platform  
-- How content production has evolved over time  
-- What trends exist in ratings and duration  
+## 📂 Dataset
 
-This project aims to answer these questions using data analysis techniques.
+The dataset contains information about nearly **9,800+ movies**, including:
 
----
-
-## 📊 Dataset Description
-The dataset contains information about Netflix content including:
-
-- Title  
-- Type (Movie / TV Show)  
-- Genre  
-- Release Year  
-- Duration  
-- Rating  
-- Country  
+- Movie Title
+- Release Date
+- Popularity
+- Vote Count
+- Vote Average
+- Genre
+- Original Language
+- Movie Overview
+- Poster URL
 
 ---
 
-## 🧹 Data Cleaning & Preparation
-- Handled missing values  
-- Removed duplicates  
-- Standardized column formats  
-- Converted data types where required  
+## 🚀 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
 ---
 
-## 📊 Exploratory Data Analysis
+## 📊 Project Workflow
 
-The following analysis was performed:
+### 1. Data Loading
+- Imported the dataset using Pandas.
+- Explored dataset dimensions and column information.
 
-- Distribution of Movies vs TV Shows  
-- Content added over years  
-- Genre-wise content distribution  
-- Country-wise content production  
-- Rating analysis  
-- Duration analysis (movies vs shows)  
+### 2. Data Cleaning
+- Removed missing values.
+- Converted data types for numerical columns.
+- Converted release dates into datetime format.
+- Extracted release year from the date.
+- Removed unnecessary columns such as:
+  - Overview
+  - Original Language
+  - Poster URL
+
+### 3. Feature Engineering
+- Categorized movie ratings into:
+  - Popular
+  - Average
+  - Below Average
+  - Not Popular
+- Split multiple genres into individual genres for detailed analysis.
+
+### 4. Exploratory Data Analysis
+Performed analysis on:
+
+- Distribution of movie genres
+- Movie ratings
+- Popularity scores
+- Vote counts
+- Release year trends
+- Genre frequency
+- Relationship between popularity and ratings
+
+### 5. Data Visualization
+Created visualizations to better understand:
+
+- Most common genres
+- Genre distribution
+- Movie release trends
+- Rating categories
+- Popularity patterns
 
 ---
 
-## 💡 Key Insights
-- Movies dominate the platform compared to TV Shows  
-- Content production increased significantly after 2015  
-- Certain genres like Drama and Comedy are most popular  
-- Majority of content comes from a few countries  
-- Most movies fall within a standard duration range  
+## 📈 Key Insights
 
----
-
-## 🚀 Business Recommendations
-- Focus on high-demand genres for content production  
-- Increase regional content diversity  
-- Invest in trending content categories  
-- Analyze viewer preferences for better recommendations  
-
----
-
-## 🛠️ Tools Used
-- Python (Pandas, NumPy)  
-- Matplotlib  
-- Seaborn  
+- Drama is the most frequently occurring movie genre in the dataset.
+- Comedy and Action are also highly represented.
+- Science Fiction movies have gained popularity in recent years.
+- Western movies appear less frequently in modern releases.
+- Most movies fall within the Average and Popular rating categories.
 
 ---
 
 ## 📁 Project Structure
+
 ```
-Netflix-Content-Analysis-and-Insights/
+Netflix-Movies-EDA/
 │
-├── dataset.csv
-├── moviedata_analysis.ipynb
+├── Netflix_EDA.ipynb
+├── mymoviedb.csv
 ├── README.md
 ```
+
+## 📚 Learning Outcomes
+
+This project helped in gaining practical experience with:
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Visualization
+- Handling Missing Values
+- Data Type Conversion
+- Statistical Analysis using Pandas
+- Working with Real-world Datasets
+
 ---
 
-## 🎯 Project Outcome
-This project demonstrates:
-✔ Data cleaning and preprocessing  
-✔ Exploratory data analysis (EDA)  
-✔ Data visualization  
-✔ Insight generation  
+## 📌 Future Improvements
+
+- Interactive dashboard using Plotly or Power BI
+- Movie recommendation system
+- Sentiment analysis using movie overviews
+- Predictive analysis using Machine Learning
+- Interactive web application using Streamlit
 
 ---
 
-## 👩‍💻 Author
+## 👨‍💻 Author
+
 **Tanuja Ranjan**
