@@ -128,4 +128,4 @@ This project helped in gaining practical experience with:
 
 ## 👨‍💻 Author
 
-**Tanuja Ranjan**
+**Litile Gupta**
